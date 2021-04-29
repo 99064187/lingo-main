@@ -47,18 +47,6 @@ function woordCheck(woord){
 
 
     //woordSplit(woord);
-
-    for(var i=0; i<inputletters.length; i++){
-        document.getElementById("woord" + pogingen + "letter" +(i+1)).innerHTML="<h1></h1>"+ inputletters[i];
-
-        if(inputletters[i] == woordletters[i]){
-            document.getElementById("woord" + pogingen + "letter" +(i+1)).style.backgroundColor="green";
-            console.log(woordletters[i]);
-            console.log(woordletters[i] + "groen");
-        }
-        woordletters[i] = null;
-    }
-    
     for(var i=0; i<inputletters.length; i++){
         document.getElementById("woord" + pogingen + "letter" +(i+1)).innerHTML="<h1></h1>"+ inputletters[i];
 
@@ -70,6 +58,19 @@ function woordCheck(woord){
         }
     }
 
+
+    for(var i=0; i<inputletters.length; i++){
+        document.getElementById("woord" + pogingen + "letter" +(i+1)).innerHTML="<h1></h1>"+ inputletters[i];
+
+        if(inputletters[i] == woordletters[i]){
+            document.getElementById("woord" + pogingen + "letter" +(i+1)).style.backgroundColor="green";
+            console.log(woordletters[i]);
+            console.log(woordletters[i] + "groen");
+        }
+        woordletters[i] = null;
+    }
+
+    
 
 
 }
