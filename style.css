@@ -1,0 +1,33 @@
+body{
+    background-color: #002FCF;
+}
+
+#container1{
+    background-image: url("lingo-logo.png");
+    background-size: cover;
+    background-position: center;
+    width: 600px;
+    height: 125px;
+    margin: 0 auto;
+}
+
+#container2{
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div{
+    border: 2px solid black;
+    text-align: center;
+    width: 90px;
+    height: 50px;
+}
+
+h1{
+    color: black;
+}
